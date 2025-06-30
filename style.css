@@ -484,3 +484,61 @@ html {
     margin-bottom: 5px;
   }
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .nav-toggle {
+    display: block; /* Buat tombol toggle */
+  }
+
+  nav ul {
+    display: none; /* Default sembunyi */
+  }
+
+  nav.active ul {
+    display: flex; /* Tampilkan saat aktif */
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p,
+.footer a,
+.footer span {
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .hero {
+    padding: 30px 20px;
+  }
+}
